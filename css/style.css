@@ -10036,9 +10036,11 @@ li.info-pts span {
 }
 
 .car {
+/*
     position: absolute;
     right: 10px;
     bottom: 40px;
+*/
     height: 70px;
     /* background: white; */
     border-radius: 10px;

@@ -4139,8 +4139,8 @@ FOOTER
     background: #000 url(../images/bg-footer.png) fixed;
     padding: 50px 0;
     background-position: left bottom;
-    background-size: contain;
-
+    background-size: cover;
+    color: #fff;
 }
 
 /*.footer .flex-flow{

@@ -3511,7 +3511,7 @@ DS .product-list .product-item {
 
 .footer .widget ul li::before {
     content: "\276F";
-    color: red;
+    color: transparent;
     font-weight: bold;
     display: inline-block;
     width: 10px;
@@ -3527,7 +3527,7 @@ DS .product-list .product-item {
 }
 
 .widget ul li a {
-    color: #212529;
+    color: #fff;
 }
 
 .widget_product_categories li,
@@ -4136,8 +4136,10 @@ FOOTER
 -----------------------------------*/
 
 .footer {
-    background: #000;
-    padding-top: 0px;
+    background: #000 url(../images/bg-footer.png) fixed;
+    padding: 50px 0;
+    background-position: left bottom;
+    background-size: contain;
 
 }
 
@@ -4153,7 +4155,7 @@ FOOTER
 
 .footer .widget .widget-title {
     font-size: 16px;
-    color: #000000;
+    color: #fff;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 600;
@@ -4180,19 +4182,22 @@ FOOTER
 }
 
 .footer .our-service ul li {
-    line-height: 28px;
-    list-style: none;
-    line-height: 28px;
+    line-height: 17px;
     list-style: none;
     border: none;
 }
 
+.footer .contact-info ul li {
+    line-height: 17px;
+}
+
 .footer .our-service ul li a {
-    color: #212529;
+    color: #fff;
+    font-weight: 600;
 }
 
 .footer .our-service ul li a:hover {
-    color: #545454;
+    color: #fff;
 }
 
 .footer .widget_social .social a {
@@ -4219,10 +4224,10 @@ FOOTER
 }
 
 .footer .footer-bottom {
-    color: #212529;
+    color: #fff;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #ccc;
+
 }
 
 .footer .payment {
@@ -10036,7 +10041,7 @@ li.info-pts span {
 }
 
 .car {
-/*
+    /*
     position: absolute;
     right: 10px;
     bottom: 40px;
@@ -10070,6 +10075,12 @@ li.info-pts span {
     }
 }
 
+@media(max-width:768px) {
+    .footer {
+        background-size: cover;
+    }
+}
+
 /*-----POPUP INICIO------*/
 @media(min-width:999px) {
     .mobile {
@@ -10098,4 +10109,9 @@ li.info-pts span {
     border-radius: 10px;
     margin: 20px 0;
     padding: 15px 15px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: self-start;
 }

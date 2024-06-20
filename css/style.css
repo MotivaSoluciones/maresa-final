@@ -9963,6 +9963,7 @@ li.info-pts {
     padding: 10px 25px;
     color: #fff;
     display: inline-block;
+    font-weight: 600;
 }
 
 li.info-pts span {

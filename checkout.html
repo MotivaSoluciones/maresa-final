@@ -20,9 +20,9 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,400,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,100,100italic,300italic,400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="icon" type="" href="images/Maresa_Fabicon.ico">
-        <style>
+    <style>
         .chosen-container {
-            width: 100%!important;
+            width: 100% !important;
         }
 
     </style>
@@ -115,7 +115,7 @@
                                 <a href="index.html">INICIO</a>
                             </li>
                             <li class="menu-item-has-children">
-                                 <a>DESCUBRE</a>
+                                <a>DESCUBRE</a>
                                 <span class="arow"></span>
                                 <ul class="sub-menu">
                                     <li><a href="funciona.html">Cómo funciona</a></li>
@@ -170,7 +170,7 @@
                             <h4 style="font-weight: 600"><span class="pe-7s-map-marker"></span> ¿En dónde recibirás tu pedido?</h4>
                             <div class="row margin-top-20">
                                 <div class="col-md-12">
-                                   
+
                                     <div class="radio">
                                         <label style="width: 100%">
                                             <input type="radio" name="optradio" checked>
@@ -247,6 +247,11 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">He leído y acepto las <a href="" data-target="#pdp" data-toggle="modal" style="text-decoration: underline"> Políticas de Pago</a>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row" style="margin-top: 15px;">
@@ -305,6 +310,28 @@
         }
 
     </script>
+    <div class="modal fade" id="pdp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+                    <h4>Políticas de pago</h4>
+                    <hr>
+                </div>
+                <div class="modal-body ">
+                    <form class="text-center">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil unde magni saepe cum quis expedita veritatis necessitatibus quam magnam rerum quia nemo aperiam mollitia, nam doloribus ab animi. amet consectetur adipisicing elit. Voluptas nihil unde magni saepe cum quis expedita veritatis necessitatibus quam magnam rerum quia nemo aperiam mollitia, nam doloribus ab anamet consectetur adipisicing elit. Voluptas nihil unde magni saepe cum quis expedita veritatis necessitatibus quam magnam rerum quia nemo aperiam mollitia, nam doloribus ab anamet consectetur adipisicing elit. Voluptas nihil unde magni saepe cum quis expedita veritatis necessitatibus quam magnam rerum quia nemo aperiam mollitia, nam doloribus ab anamet consectetur adipisicing elit. Voluptas nihil unde magni saepe cum quis expedita veritatis necessitatibus quam magnam rerum quia nemo aperiam mollitia, nam doloribus ab an Doloremque.</p>
+
+
+                        <a data-dismiss="modal" class="button" style="width: 50%">Aceptar</a>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="compra" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
@@ -379,54 +406,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="ingreso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
-            <div class="modal-content">
-                <div class="tab-product tab-product-fade-effect">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
-                        <h4 class="title bold  margin-bottom-0">Inicia sesión</h4>
-                    </div>
-                    <div class="modal-body ">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <br>
 
-                                <form class="text-left">
-
-                                    <label for="">Código de participante</label><br>
-                                    <input id="name" type="text" style="width: 100%">
-                                    <br><br>
-                                    <label for="">Contraseña</label><br>
-                                    <input id="name" type="password" style="width: 100%">
-                                    <br>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox">Recordar acceso
-                                        </label>
-                                    </div>
-                                    <br>
-                                    <a href="otp.html" class="button" style="width: 100%">Ingresar</a>
-
-                                    <br><br>
-                                    <a href="nueva.html" class="button style-11" style="width: 100%">Registrarme</a>
-
-                                    <br><br>
-                                    <a href="recuperar.html" style="text-decoration: underline;">Olvide mi contraseña </a>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="container">dddd
-                            <p class="text-center">Corporación Maresa 2023 - Todos los derechos reservados </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="modal fade" id="direccion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal fade" id="direccion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
             <div class="modal-content">
                 <div class="modal-header" style="border-bottom: 0;">
@@ -439,47 +420,47 @@
                         <div class="col-md-6">
                             <label for="">Tipo de vivienda</label><br>
                             <select name="" id="" style="width: 100%!important">
-                                <option value="" >Seleccionar</option>
-                                <option value="" >Casa</option>
-                                <option value="" >Casa de playa</option>
-                                <option value="" >Oficina</option>
+                                <option value="">Seleccionar</option>
+                                <option value="">Casa</option>
+                                <option value="">Casa de playa</option>
+                                <option value="">Oficina</option>
                             </select>
                         </div>
                         <div class="col-md-6">
                             <label for="">Provincia</label><br>
                             <select name="" id="" style="width: 100%!important">
-										<option value="" >Seleccionar</option>
-										<option value="" >Lorem</option>
-										<option value="" >Ipsum</option>
-										<option value="" >Lorem</option>
-									</select>
+                                <option value="">Seleccionar</option>
+                                <option value="">Lorem</option>
+                                <option value="">Ipsum</option>
+                                <option value="">Lorem</option>
+                            </select>
                         </div>
                         <div class="col-md-6 margin-top-20">
                             <label for="">Cantón</label><br>
                             <select name="" class="normal" id="" style="width: 100%;">
-										<option value="" class="normal">Seleccionar</option>
-										<option value="" class="normal">Lorem</option>
-										<option value="" class="normal">Ipsum</option>
-										<option value="" class="normal">Lorem</option>
-									</select>
+                                <option value="" class="normal">Seleccionar</option>
+                                <option value="" class="normal">Lorem</option>
+                                <option value="" class="normal">Ipsum</option>
+                                <option value="" class="normal">Lorem</option>
+                            </select>
                         </div>
                         <div class="col-md-6 margin-top-20">
                             <label for="">Tipo de zona</label><br>
                             <select name="" id="" style="width: 100%;">
-										<option value="" class="normal">Seleccionar</option>
-										<option value="" class="normal">Lorem</option>
-										<option value="" class="normal">Ipsum</option>
-										<option value="" class="normal">Lorem</option>
-									</select>
+                                <option value="" class="normal">Seleccionar</option>
+                                <option value="" class="normal">Lorem</option>
+                                <option value="" class="normal">Ipsum</option>
+                                <option value="" class="normal">Lorem</option>
+                            </select>
                         </div>
                         <div class="col-md-6 margin-top-20">
                             <label for="">Tipo de construcción</label><br>
                             <select name="" id="" style="width: 100%;">
-										<option value="" class="normal">Seleccionar</option>
-										<option value="" class="normal">Lorem</option>
-										<option value="" class="normal">Ipsum</option>
-										<option value="" class="normal">Lorem</option>
-									</select>
+                                <option value="" class="normal">Seleccionar</option>
+                                <option value="" class="normal">Lorem</option>
+                                <option value="" class="normal">Ipsum</option>
+                                <option value="" class="normal">Lorem</option>
+                            </select>
                         </div>
                         <div class="col-md-6 margin-top-20">
                             <label for="">Dirección</label><br>

@@ -4754,7 +4754,6 @@ FOOTER
 
 .section-title h3 {
     font-size: 24px;
-    text-transform: uppercase;
     color: #222;
     margin-bottom: 0;
     position: relative;
@@ -5557,8 +5556,8 @@ FOOTER
 }
 
 .tab-product .nav-tab li a {
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 16px;
+    
     color: #686868;
     position: relative;
 }
@@ -6756,7 +6755,7 @@ table.group-product > tbody > tr > td {
 table.group-product > tbody > tr > th {
     background-color: #eee;
     border: none;
-    text-transform: uppercase;
+  
 }
 
 table.group-product a {
@@ -9338,6 +9337,7 @@ RESPONSIVE
     .tab-product .nav-tab:not(.box-categories) li a {
         font-weight: 600;
         padding: 0 20px;
+        font-size: 13px;
     }
 
     .tab-product .nav-tab.box-categories li img {

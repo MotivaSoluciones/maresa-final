@@ -111,7 +111,7 @@
                                 <a href="index.html">INICIO</a>
                             </li>
                             <li class="menu-item-has-children">
-                                 <a>DESCUBRE</a>
+                                <a>DESCUBRE</a>
                                 <span class="arow"></span>
                                 <ul class="sub-menu">
                                     <li><a href="funciona.html">Cómo funciona</a></li>
@@ -260,14 +260,18 @@
                             </div>
                             <div class="col-md-8">
                                 <label for="">Foto de matrícula:</label><br>
-                                <input type="file" class="form-control " width="100%">
+                                <input type="file" class="form-control " width="100%" style="height: 38px">
                                 <br>
                             </div>
-
+                            <div class="col-md-4">
+                                <label for="">Vehículo principal: <a data-toggle="modal" data-target="#principal"  style="color: #666"><span style="font-weight: 600;font-size: 20px" class="icon pe-7s-info" ></span></a> </label><br>
+                                <input type="radio" id="si"> Sí <input type="radio" id="no" style="margin-left: 15px"> No
+                               
+                            </div>
 
                         </div>
 
-                        <div class="row">
+                        <div class="row margin-top-20">
                             <div class="col-md-12 ">
                                 <a class="button button-add-cart">Guardar</a>
                             </div>
@@ -402,12 +406,32 @@
                     </button>
                 </div>
                 <div class="modal-body " style="margin-bottom: 20px;">
-                    <h4 class="text-center">ELIMINAR DIRECCIÓN</h4>
+                    <h4 class="text-center">Eliminar dirección</h4>
                     <br>
                     <p class="text-center">¿Estas seguro de eliminar la dirección "Casa playa"?</p>
                     <div class="row text-center">
                         <div class="col-md-12">
-                            <a class="button style-10" data-dismiss="modal">Eliminar</a>
+                            <a class="button button-add-cart" data-dismiss="modal">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="principal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body " style="margin-bottom: 20px;">
+                    <h4 class="text-center">¿Deseas que este registro sea tu vehículo principal?</h4>
+                    <br>
+                    <p class="text-center">Recuerda que al escoger sí, sólo podrás revisar en la sección MI AVANCE el seguimiento de mantenimientos de este vehículo</p>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <a class="button button-add-cart" data-dismiss="modal">Aceptar</a>
                         </div>
                     </div>
                 </div>

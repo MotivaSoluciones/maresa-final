@@ -264,9 +264,9 @@
                                 <br>
                             </div>
                             <div class="col-md-4">
-                                <label for="">Vehículo principal: <a data-toggle="modal" data-target="#principal"  style="color: #666"><span style="font-weight: 600;font-size: 20px" class="icon pe-7s-info" ></span></a> </label><br>
+                                <label for="">Vehículo principal: <a data-toggle="modal" data-target="#principal" style="color: #666"><span style="font-weight: 600;font-size: 20px" class="icon pe-7s-info"></span></a> </label><br>
                                 <input type="radio" id="si"> Sí <input type="radio" id="no" style="margin-left: 15px"> No
-                               
+
                             </div>
 
                         </div>
@@ -288,24 +288,41 @@
                                             <th class="text-center">Número de chasis</th>
                                             <th class="text-center">Modelo</th>
                                             <th class="text-center">Marca</th>
+                                            <th class="text-center">Vehículo principal</th>
+                                            <th class="text-center">Acciones</th>
                                         </tr>
                                         <tr>
                                             <td>PAB-1234</td>
                                             <td>19abc20152080</td>
                                             <td>lorem</td>
                                             <td>lorem</td>
+                                            <td>Sí</td>
+                                            <td>
+                                                <a data-toggle="modal" data-target="#editCar"><span class="icon pe-7s-tools" style="font-size: 25px"></span></a>
+                                                <a data-toggle="modal" data-target="#deleteCar"><span class="icon pe-7s-trash" style="font-size: 25px"></span></a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>AXX-1234</td>
                                             <td>19abc20152080</td>
                                             <td>lorem</td>
                                             <td>lorem</td>
+                                            <td>No</td>
+                                            <td>
+                                                <a data-toggle="modal" data-target="#editCar"><span class="icon pe-7s-tools" style="font-size: 25px"></span></a>
+                                                <a data-toggle="modal" data-target="#deleteCar"><span class="icon pe-7s-trash" style="font-size: 25px"></span></a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>BHM-1234</td>
                                             <td>19abc20152080</td>
                                             <td>lorem</td>
                                             <td>lorem</td>
+                                            <td>Sí</td>
+                                            <td>
+                                                <a data-toggle="modal" data-target="#editCar"><span class="icon pe-7s-tools" style="font-size: 25px"></span></a>
+                                                <a data-toggle="modal" data-target="#deleteCar"><span class="icon pe-7s-trash" style="font-size: 25px"></span></a>
+                                            </td>
                                         </tr>
 
                                     </table>
@@ -418,12 +435,88 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="deleteCar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+                    <h4 class="margin-top-10"><span class="icon pe-7s-trash" style="font-size: 25px"></span> Eliminar vehículo</h4>
+                </div>
+                <div class="modal-body " style="margin-bottom: 20px;">
+                    <p class="text-center">¿Estas seguro de eliminar el vehículo de placa XYS - 1234?</p>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <a class="button button-add-cart" data-dismiss="modal">Cancelar</a>
+                            <a class="button style-11  margin-left-15" data-dismiss="modal">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editCar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+                    <h4 class="margin-top-10"><span class="icon pe-7s-tools" style="font-size: 25px"></span> Editar vehículo de placa XYS - 1234</h4>
+                </div>
+                <div class="modal-body " style="margin-bottom: 20px;">
+
+                    <div class="row margin-top-20">
+                        <div class="col-md-6">
+                            <p>
+                                <label for="">Número de placa</label><br>
+                                <input value="PAB-1234" type="text" style="width: 100%">
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <label for="">Número de chasis</label><br>
+                                <input value="19abc20152080" type="text" style="width: 100%">
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <p>
+                                <label for="">Modelo</label><br>
+                                <input value="loremipsum" type="text" style="width: 100%">
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <label for="">Marca</label><br>
+                                <input value="lorem iposum" type="text" style="width: 100%">
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Foto de matrícula:</label><br>
+                            <input type="file" class="form-control " width="100%" style="height: 38px">
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Vehículo principal: <a data-toggle="modal" data-target="#principal" style="color: #666"><span style="font-weight: 600;font-size: 20px" class="icon pe-7s-info"></span></a> </label><br>
+                            <input type="radio" id="si" checked> Sí <input type="radio" id="no" style="margin-left: 15px"> No
+
+                        </div>
+
+                    </div>
+                    <div class="row text-center margin-top-20">
+                        <div class="col-md-12">
+                            <a class="button button-add-cart" data-dismiss="modal">Actualizar</a>
+                            <a class="button style-11 margin-left-15" data-dismiss="modal">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="principal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog" role="document" style="z-index: 1041;margin-top: 100px;">
             <div class="modal-content">
                 <div class="modal-header" style="border-bottom: 0;">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body " style="margin-bottom: 20px;">
                     <h4 class="text-center">¿Deseas que este registro sea tu vehículo principal?</h4>
@@ -431,7 +524,7 @@
                     <p class="text-center">Recuerda que al escoger sí, sólo podrás revisar en la sección MI AVANCE el seguimiento de mantenimientos de este vehículo</p>
                     <div class="row text-center">
                         <div class="col-md-12">
-                            <a class="button button-add-cart" data-dismiss="modal">Aceptar</a>
+                            <a class="button button-add-cart" data-dismiss="modal">Entendido</a>
                         </div>
                     </div>
                 </div>

@@ -8490,7 +8490,9 @@ table {
 /*------------------
  SECTION 
  -------------------*/
-
+.margin-left-15 {
+    margin-left: 15px !important;
+}
 .margin-bottom-75 {
     margin-bottom: 75px !important;
 }

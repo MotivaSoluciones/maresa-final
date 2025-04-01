@@ -10118,3 +10118,76 @@ li.info-pts span {
     display: flex;
     align-items: self-start;
 }
+/*-----NUEVO CARRUSEL DE BANNER---*/
+
+/* Contenedor principal del slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+/*    max-width: 1200px;*/
+    /* Puedes ajustar el ancho máximo */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo del contenedor de las imágenes */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Cada imagen ocupa todo el ancho del contenedor */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Botones de navegación */
+.prev,
+.next {
+    position: absolute;
+    top: 42%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Puntos de navegación (dots) */
+.dots-container {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #18233f;
+}
